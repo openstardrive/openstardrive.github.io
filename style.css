@@ -1,0 +1,180 @@
+ body {
+     background-color: darkgray;
+     padding: 0;
+     margin: 0;
+     font-family: Helvetica, Arial, sans-serif;
+ }
+
+a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ h1 {
+    margin: 0;
+    padding-top: 20px;
+ }
+
+ h2 {
+     color: white;
+     background-color: darkblue;
+     padding: 5px 10px;
+     border-radius: 0 50px 50px 0;
+ }
+
+ h3 {
+    margin-top: 2em;
+    margin-bottom: 0;
+    border-bottom: 1px solid black;
+ }
+
+ h4 {
+     margin-bottom: 0;
+ }
+
+ svg {
+     margin-bottom: 1em;
+ }
+
+ p:first-child {
+     margin-top: 0;
+ }
+
+ p:last-child {
+    margin-bottom: 0;
+}
+
+ul:last-child {
+    margin-bottom: 0;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+    background-color: white;
+}
+
+.columns {
+    columns: 2;
+}
+
+.columns > div, .columns > p, .columns > ul, .columns > ol {
+    break-inside: avoid;
+}
+
+.synopsis {
+    font-style: italic;
+}
+
+.scene-meta {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 1em;
+    color: gray;
+}
+
+.duration::before {
+    content: '🕑';
+    margin-right: 10px;
+}
+
+.mission-clock {
+    margin-right: 10px;
+}
+
+.sidebar {
+    background-color: darkblue;
+    color: #eee;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.sidebar-title {
+    font-weight: bold;
+    color: white;
+}
+
+/*
+.sidebar-right {
+    float: right;
+    width: 34%;
+    margin-left: 10px;
+    border-radius: 10px 0 0 10px;
+}
+*/
+
+.dialog {
+    font-style: italic;
+}
+
+.tip {
+    background-color: #333;
+}
+
+.grouped {
+    margin: 1em 0;
+}
+
+@media (max-width: 620px) {
+    .columns {
+        columns: unset;
+    }
+}
+.starmap {
+    background-color: black;
+    border: #333;
+    fill: white;
+    font-size: 10px;
+}
+
+.map-grid {
+    stroke: #aa9900;
+    stroke-dasharray: 3 2;
+}
+
+.ship {
+    stroke: blue;
+    fill: lightblue;
+}
+
+.odyssey {
+    stroke: green;
+    fill: lightgreen;
+}
+
+.distress {
+    stroke: red;
+    fill: pink;
+}
+
+#map-defs {
+    display: none;
+}
+
+.spacer {
+    height: 20px;
+}
+
+.footer {
+    color: #ccc;
+    background-color: #333;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer img {
+    padding-right: 10px;
+}
+
+.footer a {
+    color: lightblue;
+}

@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mission: After Image</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="content">
+            <h1>After Image</h1>
+
+            <h2>Synopsis</h2>
+            <p class="synopsis">
+                The crew participates in an experiment which goes wrong and creates a temporal rift.
+                While fetching the supplies necessary to reverse the experiment, they encounter temporal anomalies including their future selves under attack by an alien vessel.
+                Success depends on closing the rift, but whether they survive depends on whether they rescue themselves.
+            </p>
+
+            <h2>Setting</h2>
+            <div class="columns">
+                <p>
+                    This mission is written for a Star Trek setting.
+                    It can be adapted for other similar settings by swapping out terms like "warp drive" and "phasers" for equivalents.
+                </p>
+                <p>
+                    This mission is intended to be generic enough to run in any starship simulator,
+                    but it references the <em>USS Odyssey</em> for convenience and in honor of the original version of the mission which ran in the late 1990's.
+                </p>
+                <div>
+                    The names and places in this mission include:
+                    <ul>
+                        <li><strong>Captain Calypso</strong> - the captain of the <em>Fenris Sun</em></li>
+                        <li><strong>Dr. Bates</strong> - the head scientist at the <em>Raza Array</em></li>
+                        <li><strong><em>Fenris Sun</em></strong> - a cargo freighter with a crew of 12</li>
+                        <li><strong>Lieutenant Yao</strong> - an officer of New Avalon</li>
+                        <li><strong>New Avalon</strong> - a Federation colony (population: 200,000+)</li>
+                        <li><strong><em>Odyssey</em></strong> - the crew's ship</li>
+                        <li><strong><em>Raza Array</em></strong> - a science station</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>Mission Briefing</h2>
+            <div class="columns">
+                <p>
+                    The crew is being sent to the <em>Raza Array:</em> a science station orbiting a neutron star.
+                    Their mission is to assist the head scientist, <strong>Dr. Bates</strong>, with an experiment which requires the help of a starship.
+                </p>
+                <p>
+                    The <em>Raza Array</em> was built to study gravity and dark matter,
+                    in an attempt to better understand the forces which hold the galaxies together in the known universe.
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" class="starmap">
+                    <use xlink:href="#fixed-map"/>
+                </svg>
+                <div class="sidebar">
+                    <p class="sidebar-title">Real-World Science Connection</p>
+                    <p>
+                        What holds planets, stars, and galaxies together?
+                        Gravity is the primary force we think is responsible.
+                    </p>
+                    <p>
+                        We can measure gravity based on how much it changes the course of light, bending the path just like an optical lens.
+                        Scientists use telescopes such as the Hubble Space Telescope or the Fermi Gamma-Ray Space Telescope
+                        to measure the amount of bending and calculate the force of gravity.
+                    </p>
+                    <p>
+                        But as astronomers measure what's out there in the universe,
+                        they have not found enough matter to account for the gravitational effects we observe.
+                        We assume there must be something out there that accounts for this, and we call it <em>dark matter</em>.
+                    </p>
+                    <p>
+                        Dark matter may account for as much as 85% of the matter in the universe.
+                        Some gravitationally heavy things like black holes and neutron stars could help explain dark matter,
+                        because they can be difficult to locate.
+                        Or dark matter could be <em>non-baryonic</em>,
+                        which means it is matter which does not interact with "regular" matter in the ways we are used to.
+                    </p>
+                    <p>
+                        We still have much to learn about what makes up our universe.
+                    </p>
+                </div>
+            </div>
+
+            <h2>Scenes</h2>
+
+            <h3>Go for Launch</h3>
+            <div class="scene-meta">
+                <div class="mission-clock">00:00</div>
+                <div class="duration">5 min</div>
+            </div>
+            <div class="columns">
+                <p>
+                    Following their training, the crew sets course for the <em>Raza Array</em>.
+                </p>
+                <div class="sidebar tip">
+                    <p class="sidebar-title">Launch Sequence</p>
+                    <p>
+                        Starting off the mission with some kind of launch or undocking sequence helps transition from training to the mission.
+                        It also builds excitement for what is to come.
+                        Customize this for your specific starship and setting.
+                    </p>
+                </div>
+            </div>
+
+            <h3>The Experiment</h3>
+            <div class="scene-meta">
+                <div class="mission-clock">00:05</div>
+                <div class="duration">25 min</div>
+            </div>
+            <div class="columns">
+                <p>
+                    When the ship arrives at the <em>Raza Array</em>, they should be alerted to the high radiation levels emitted from the neutron star.
+                    They need to raise their shields to stay safe.
+                </p>
+                <p>
+                    The next order of business is to open a communication channel and (verbally) meet Dr. Bates.
+                </p>
+                <div class="sidebar dialog">
+                    <p>
+                        "Thank you for coming!
+                        We are very excited to conduct this experiment.
+                        If successful, we will get a precise measurement of how much the gravity of the nearby star bends high-energy emissions.
+                        Then we'll use that data to make further calculations to determine how much dark matter exists in this sector.
+                    </p>
+                    <p>
+                        "But we cannot perform this experiment without your help.
+                        We will be using a modified warp core to bend space in the area around the station.
+                        Your ship's phasers and targeting systems are necessary to complete the experiment.
+                        Once in position outside of our warp field, you'll just need to fire your phasers at the drone we've provided as a target.
+                        Gravity should bend the phaser beam enough to miss the drone."
+                    </p>
+                </div>
+                <div class="grouped">
+                    <p>
+                        Dr. Bates will then instruct the crew how to perform the experiment.
+                        At a minimum the steps will include:
+                    </p>
+                    <ol>
+                        <li>Moving into position using thrusters</li>
+                        <li>Locating the small targeting drone on sensors</li>
+                        <li>Targeting and firing phasers at the drone</li>
+                    </ol>
+                </div>
+                <div class="sidebar tip">
+                    <p class="sidebar-title">Getting the Crew Involved</p>
+                    <p>
+                        Depending on the details of your simulator and available crew positions, you can add additional steps to involve more of the crew.
+                        Some examples:
+                    </p>
+                    <ul>
+                        <li>Put extra power into phasers and/or shields</li>
+                        <li>Engineering / damage control tasks to reinforce the ship systems</li>
+                        <li>Modulate the shield frequency</li>
+                        <li>Send a long range message reporting that the experiment is underway</li>
+                    </ul>
+                </div>
+                
+                <p>
+                    The experiment appears to be running smoothly when suddenly there is an alarm on the station.
+                    Dr. Bates cries out in dismay, telling someone else on the <em>Array</em> to "shut it down!"
+                    A shockwave hits the <em>Odyssey</em>, causing minor damage.
+                </p>
+                <p>
+                    Dr. Bates explains that the warp drive seems to have overloaded during the experiment.
+                    The <em>Raza Array</em> does not have the supplies needed to make repairs and get the experiment going again,
+                    so they are now sending a long range message to the nearby colony of New Avalon to order what they need.
+                    The crew is tasked with traveling to the colony to pick up the supplies.
+                </p>
+            </div>
+
+            <h3>A Distress Call</h3>
+            <div class="scene-meta">
+                <div class="mission-clock">00:30</div>
+                <div class="duration">10 min</div>
+            </div>
+            <div class="columns">
+                <p>
+                    While en route to New Avalon, the crew receives a distress call from the <em>Fenris Sun</em>,
+                    a light freighter which is under attack by an unknown vessel!
+                </p>
+                <p>
+                    The signal is coming from a point very near by, but strangely there is no sign of the freighter or any other vessel.
+                    Long range scans will locate the freighter several lightyears away, heading toward the point of the distress signal.
+                    The captain should change course to intercept the freighter.
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" class="starmap">
+                    <use xlink:href="#fixed-map"/>
+                    <use xlink:href="#distress" x="140" y="82"/>
+                    <use xlink:href="#freighter" x="200" y="120"/>
+                </svg>
+                <div class="sidebar tip">
+                    <p class="sidebar-title">Captain's Prerogative</p>
+                    <p>
+                        If the captain declines to change course, you can safely skip to the next scene.
+                        However, the confusion around the freighter's distress call is one of the more overt clues
+                        about the temporal anomalies which have begun.
+                        Make sure to stress that something strange is going on.
+                    </p>
+                </div>
+                <p>
+                    As they get close to the freighter, sensors reveal that it is undamaged.
+                    Still no other vessels are detected.
+                    When they hail the ship, it's captain will answer: "This is Captain Calypso of the <em>Fenris Sun</em>. What can I do for you?"
+                </p>
+                <p>
+                    The freighter captain will be very confused, telling the <em>Odyssey</em> crew that everything is fine
+                    and that they have neither seen any unknown ships nor sent out any distress calls.
+                </p>
+                <p>
+                    Since everything appears to be fine, the <em>Odyssey</em> crew should return to their task of getting supplies from New Avalon.
+                </p>
+                <div class="sidebar">
+                    <p class="sidebar-title">Long Range Message</p>
+                    <p>
+                        Around this point, the communications officer should receive the following long range message
+                        from Dr. Bates at the <em>Raza Array</em> addressed to Starfleet Command, dated yesterday:
+                    </p>
+                    <p class="dialog">
+                        Preparations for the gravity warp experiment are complete.
+                        Thank you for sending a ship, we are excited for their arrival tomorrow.
+                        If this experiment goes well, I hope you will reconsider providing us a permanent
+                        mid-sized vessel since our drones and shuttles are insufficient for this type of work.
+                    </p>
+                </div>
+            </div>
+            
+
+            <h3>Save Yourselves!</h3>
+            <div class="scene-meta">
+                <div class="mission-clock">00:40</div>
+                <div class="duration">20 min</div>
+            </div>
+            <div class="columns">
+                <p>
+                    As the crew aboard the <em>Odyssey</em> gets closer to New Avalon,
+                    sensors should show the <em>Odyssey</em> &mdash; their own ship?! &mdash; ahead.
+                </p>
+                <p>
+                    Scans of this <em>"Other Odyssey"</em> will detect a high chroniton particle count
+                    and indications of a space-time anomaly which prevent sensors from obtaining further detail.
+                    They will have to get close to know what's going on.
+                </p>
+                <div class="sidebar tip">
+                    <p class="sidebar-title">Fate and Free Will</p>
+                    <p>
+                        Unlike with the distress signal, avoid calling <em>too</em> much attention to this strange event.
+                        They need to notice it, but should not be told what (if anything) to do about it.
+                        Little do they know that they are seeing their own future.
+                        The crew is meant to be responsible for their own fate.
+                    </p>
+                    <p>
+                        If they should choose to ignore their future selves and pass by the other <em>Odyssey</em>,
+                        or if they flee the ensuing battle, skip ahead to the next scene.
+                        If you want, you can give them a second chance by jumping back to this scene
+                        after they pick up the supplies from New Avalon.
+                    </p>
+                    <p>
+                        Note that if they don't destroy the alien vessel, their mission will end in destruction.
+                    </p>
+                </div>
+                <p>
+                    When they get close to the <em>Other Odyssey</em>, they will find an unidentified alien vessel firing attacking it.
+                    (The alien vessel simply appears out of nowhere; it was not detectable previously due to the temporal anomaly.)
+                    This alien ship will immediately turn on the newcomer <em>Odyssey</em>, opening fire without any provocation.
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" class="starmap">
+                    <use xlink:href="#fixed-map"/>
+                    <use xlink:href="#odyssey" x="120" y="140"/>
+                </svg>
+                <p>
+                    Any scans at this point will reveal that the <em>Other Odyssey</em> has been severely damaged and is unable to defend itself.
+                    The alien vessel does not correspond to any known spacefaring species.
+                    It is difficult to discern the technology of the ship, but it does appear to be damaged.
+                    Any attempts to communicate will fail.
+                </p>
+                <p>
+                    In order to defend themselves, the crew must return fire.
+                    After a short exchange, the attacker is destroyed.
+                    The debris of the ship and the <em>Other Odyssey</em> then fade out of existence.
+                </p>
+                <p>
+                    With nothing else to do in this now empty bit of space, the crew should go get the repair supplies from New Avalon.
+                </p>
+            </div>
+
+            <h3>Obtaining Supplies</h3>
+            <div class="scene-meta">
+                <div class="mission-clock">01:00</div>
+                <div class="duration">10 min</div>
+            </div>
+            <div class="columns">
+                <p>
+                    When they arrive at New Avalon, they should enter orbit and then hail the colony.
+                    They will speak with <strong>Lieutenant Yao</strong> of the Governor's Office.
+                    The captain should ask about obtaining the repair supplies for the <em>Raza Array</em>.
+                    Yao will answer that the supplies are ready.
+                </p>
+                <div class="sidebar dialog">
+                    <p>
+                        "In fact, we've had these supplies ready since we got the long range message yesterday.
+                        Which reminds me, you should tell them to adjust their computer clock &mdash;
+                        the sending timestamp on their message was almost a day ahead when we got it."
+                    </p>
+                </div>
+                <p>
+                    Once they have the cargo secured, the crew can set course back to the <em>Raza Array</em>.
+                </p>
+                <div class="sidebar tip">
+                    <p class="sidebar-title">Loading the Cargo</p>
+                    <p>
+                        Getting the cargo on board is an opportunity to engage members of the crew with tasks to complete.
+                        Depending on the capabilities of your simulator controls, here are some options of how to achieve this:
+                    </p>
+                    <ul>
+                        <li>Land the ship at a cargo loading platform.</li>
+                        <li>A shuttle can ferry up the supplies from the surface.</li>
+                        <li>Use a tractor beam to tow a cargo container.</li>
+                        <li>Use transporters to beam the cargo on board.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Freighter Debris</h3>
+            <div class="scene-meta">
+                <div class="mission-clock">01:10</div>
+                <div class="duration">5 min</div>
+            </div>
+            <div class="columns">
+                <p>
+                    On the way back to the <em>Raza Array</em>,
+                    sensors will detect debris in the same location where they had originally detected a distress call.
+                    Sensor scans will reveal the debris came from the freighter <em>Fenris Sun</em>.
+                    There are no survivors.
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" class="starmap">
+                    <use xlink:href="#fixed-map"/>
+                    <use xlink:href="#debris" x="140" y="82"/>
+                </svg>
+                <div class="sidebar tip">
+                    <p class="sidebar-title">It Was Aliens</p>
+                    <p>
+                        If the crew battled the alien vessel, they'll be able to confirm that the freighter was destroyed by the same ship
+                        (the residual energy matches that vessel's energy weapons).
+                    </p>
+                    <p>
+                        But if they skipped that encounter, sensor scans can at least tell them that the ship was destroyed
+                        by some kind of energy weapon unlike any known to the Federation.
+                    </p>
+                </div>
+                <div class="sidebar tip">
+                    <p class="sidebar-title">What Freighter?</p>
+                    <p>
+                        If the captain chose not investigate the distress call during the earlier scene,
+                        they won't know much about the freighter.
+                        The ship's computer can tell them it was a cargo vessel with a crew of 12, commanded by Captain Calypso.
+                    </p>
+                </div>
+                <p>
+                    After a brief investigation, the crew should send a long range message to inform Starfleet Command
+                    of the destruction of the <em>Fenris Sun</em>.
+                    Then they need to get back to the <em>Raza Array</em>.
+                </p>
+            </div>
+
+            <h3>The Temporal Rift</h3>
+            <div class="scene-meta">
+                <div class="mission-clock">01:15</div>
+                <div class="duration">25 min</div>
+            </div>
+            <div class="columns">
+                <p>
+                    Dr. Bates will hail the <em>Odyssey</em> as soon as it arrives.
+                    Sensors should show a temporal rift nearby.
+                </p>
+                <div class="sidebar dialog">
+                    <p>
+                        "We've got a big problem here!
+                        Our experiment accidentally opened up a temporal rift.
+                        This tear in the space-time continuum is disrupting the flow of time in this sector.
+                        Things are happening before or after they should!
+                    </p>
+                    <p>
+                        "If that weren't bad enough, a strange alien ship emerged from the rift and headed on a course toward New Avalon!
+                        We've got to close this rift to restore time's natural flow before anything else slips through!"
+                    </p>
+                </div>
+                <p>
+                    The first priority is to deliver the supplies to the station.
+                    Due to radiation from the neutron star, the <em>Odyssey</em> will have to dock with <em>Raza Station</em>.
+                    Transporters and tractor beams are not options.
+                </p>
+                <p>
+                    While repairs are underway, Dr. Bates will explain that they need to reverse the experiment to close the rift.
+                    The <em>Odyssey</em> will perform the same steps as before, firing their phasers at the target drone,
+                    while aboard the <em>Raza Array</em> they will invert the warp field.
+                </p>
+                <div class="sidebar tip">
+                    <p class="sidebar-title">What's Going On?</p>
+                    <p>
+                        By this point, the crew has been given many hints that something strange has been going on.
+                        Some of the clues have been overt (seeing their own ship on sensors!)
+                        while others have been more subtle, like long range messages happening at the wrong times.
+                        But they might not have connected the dots just yet.
+                    </p>
+                    <p>
+                        This is the time to make sure that the crew understands what's been going on!
+                        Conversation with Dr. Bates is a great way to accomplish this.
+                        Have the doctor ask questions about what they've experienced,
+                        and then highlight the connection back to the experiment and the rift they still haven't caught on.
+                    </p>
+                    <p>
+                        It's much more satisfying for the crew if they figure it out on their own,
+                        so try to lead them into the realization.
+                        But since they're heading toward the final scene, just tell them if necessary.
+                    </p>
+                </div>
+                <p>
+                    It only takes a couple minutes for the <em>Raza</em> engineers to install the repair supplies
+                    (while Dr. Bates is talking with the crew).
+                    Then it is time to conduct the reversed experiment.
+                </p>
+                <p>
+                    The temporal rift successfully closes.
+                </p>
+            </div>
+            
+            <h3>Consequences</h3>
+            <div class="scene-meta">
+                <div class="mission-clock">01:40</div>
+                <div class="duration">15 min</div>
+            </div>
+            <div class="columns">
+                <p>
+                    Now that space-time is repaired, there is one last task for the crew:
+                    they need to find that alien vessel and prevent it from killing anyone else.
+                </p>
+                <div class="sidebar tip">
+                    <p class="sidebar-title">But We Already Destroyed the Alien Ship!</p>
+                    <p>
+                        If the crew has already destroyed the alien vessel, Dr. Bates will explain that due to the effects of the temporal rift
+                        we cannot know <strong><em>when</em></strong> they destroyed it.
+                        Therefore it is critical that they head to New Avalon immediately, in case they can still save some lives.
+                    </p>
+                </div>
+                <p>
+                    All indications point to the alien vessel heading to New Avalon
+                    (the freighter debris and other <em>Odyssey</em> were along the way).
+                    The crew should set course and head there at top speed.
+                </p>
+                <p>
+                    They will intercept the alien vessel at the same location where sensors found the <em>Odyssey</em> earlier.
+                    The unknown ship immediately launches an attack on the <em>Odyssey</em>, damaging their warp engines.
+                    Attempts to return fire will damage the assailant, but not stop the punishing attack.
+                    No matter what the crew does, their ship will be disabled.
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" class="starmap">
+                    <use xlink:href="#fixed-map"/>
+                    <use xlink:href="#alien-vessel" x="120" y="140"/>
+                </svg>
+                <p>
+                    But then, another <em>Odyssey</em> appears on sensors.
+                </p>
+            </div>
+
+            <h3>Consequences</h3>
+            <div class="scene-meta">
+                <div class="mission-clock">01:55</div>
+                <div class="duration">5 min</div>
+            </div>
+            <div class="columns">
+                <p>
+                    What happens next depends entirely on what actions the crew took during the "Save Yourselves!" scene.
+                </p>
+                <div>
+                    <h4>If They Previously Destroyed the Alien Ship...</h4>
+                    <p>
+                        then the other <em>Odyssey</em> comes to the rescue.
+                        The alien ship will turn on the newcomer, opening fire right away.
+                        After a brief exchange, the alien vessel is destroyed!
+                    </p>
+                    <p>
+                        The crew successfully saved their own lives!
+                        Then the past version of the <em>Odyssey</em> fades out of this timeline.
+                    </p>
+                </div>
+                <div>
+                    <h4>If The Alien Ship Survived...</h4>
+                    <p>
+                        then the other <em>Odyssey</em> will pass right on by
+                        (or perhaps engages the alien ship only to then flee, depending on what the crew did earlier).
+                    </p>
+                    <p>
+                        Alone and defenseless, the <em>Odyssey</em> is destroyed.
+                    </p>
+                    <p>
+                        However, the crew should celebrate that the mission is still considered a success:
+                    </p>
+                    <ul>
+                        <li>They helped the <em>Raza Array</em> perform their experiment, as per their original instructions.</li>
+                        <li>They successfully closed the temporal rift.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>Credits</h2>
+            <p>
+                Mission written by Allan Stewart
+            </p>
+            <p>
+                Special thanks to: Chris Call, Dave Wall, and James Porter.
+            </p>
+            <p>
+                Dedicated to the memory of Stephen Porter.
+            </p>
+
+            <div class="spacer"></div>
+        </div>
+
+        <div class="content footer">
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+            </a>
+            <div>
+                This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </div>
+        </div>
+
+        <svg id="map-defs" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <polygon id="star" points="0 -1, 0.2 -0.2, 1 0, 0.2 0.2, 0 1, -0.2 0.2, -1 0, -0.2 -0.2"/>
+        
+                <g id="map-grid" class="map-grid">
+                    <line x1="25" y1="0" x2="25" y2="200"/>
+                    <line x1="75" y1="0" x2="75" y2="200"/>
+                    <line x1="125" y1="0" x2="125" y2="200"/>
+                    <line x1="175" y1="0" x2="175" y2="200"/>
+                    <line x1="225" y1="0" x2="225" y2="200"/>
+                    <line x1="275" y1="0" x2="275" y2="200"/>
+                    <line x1="0" y1="25" x2="300" y2="25"/>
+                    <line x1="0" y1="75" x2="300" y2="75"/>
+                    <line x1="0" y1="125" x2="300" y2="125"/>
+                    <line x1="0" y1="175" x2="300" y2="175"/>
+                </g>
+        
+                <g id="background-stars">
+                    <circle cx="11" cy="4" r="1" />
+                    <circle cx="1" cy="21" r="1"/>
+                    <circle cx="30" cy="112" r="1"/>
+                    <circle cx="202" cy="113" r="1"/>
+                    <circle cx="59" cy="125" r="1"/>
+                    <circle cx="123" cy="13" r="1"/>
+                    <circle cx="79" cy="129" r="1"/>
+                    <circle cx="54" cy="18" r="1"/>
+                    <circle cx="91" cy="155" r="1"/>
+                    <circle cx="90" cy="170" r="1"/>
+                    <circle cx="5" cy="77" r="1"/>
+                    <circle cx="122" cy="191" r="1"/>
+                    <circle cx="73" cy="148" r="1"/>
+                    <circle cx="85" cy="195" r="1"/>
+                    <circle cx="291" cy="168" r="1"/>
+                    <circle cx="12" cy="35" r="1"/>
+                    <circle cx="122" cy="194" r="1"/>
+                    <circle cx="147" cy="83" r="1"/>
+                    <circle cx="212" cy="176" r="1"/>
+                    <circle cx="234" cy="22" r="1"/>
+                    <circle cx="159" cy="181" r="1"/>
+                    <circle cx="201" cy="108" r="1"/>
+                    <circle cx="174" cy="19" r="1"/>
+                    <circle cx="18" cy="168" r="1"/>
+                    <circle cx="163" cy="126" r="1"/>
+                    <circle cx="89" cy="141" r="1"/>
+                    <circle cx="114" cy="69" r="1"/>
+                    <circle cx="48" cy="185" r="1"/>
+                    <circle cx="254" cy="151" r="1"/>
+                    <circle cx="137" cy="198" r="1"/>
+                    <circle cx="223" cy="152" r="1"/>
+                    <circle cx="264" cy="5" r="1"/>
+                    <circle cx="30" cy="34" r="1"/>
+                    <circle cx="189" cy="183" r="1"/>
+                    <circle cx="98" cy="123" r="1"/>
+                    <circle cx="257" cy="166" r="1"/>
+                    <circle cx="69" cy="85" r="1"/>
+                    <circle cx="73" cy="22" r="1"/>
+                    <circle cx="265" cy="120" r="1"/>
+                    <circle cx="18" cy="102" r="1"/>
+                    <circle cx="202" cy="68" r="1"/>
+                    <circle cx="237" cy="128" r="1"/>
+                    <circle cx="43" cy="18" r="1"/>
+                    <circle cx="18" cy="100" r="1"/>
+                    <circle cx="89" cy="77" r="1"/>
+                    <circle cx="223" cy="159" r="1"/>
+                    <circle cx="43" cy="92" r="1"/>
+                    <circle cx="267" cy="165" r="1"/>
+                    <circle cx="190" cy="43" r="1"/>
+                    <circle cx="227" cy="127" r="1"/>
+                    <circle cx="226" cy="73" r="1"/>
+                    <circle cx="47" cy="170" r="1"/>
+                    <circle cx="138" cy="32" r="1"/>
+                    <circle cx="90" cy="145" r="1"/>
+                    <circle cx="294" cy="179" r="1"/>
+                    <circle cx="73" cy="177" r="1"/>
+                    <circle cx="188" cy="76" r="1"/>
+                    <circle cx="167" cy="139" r="1"/>
+                    <circle cx="81" cy="74" r="1"/>
+                    <circle cx="80" cy="24" r="1"/>
+                    <circle cx="170" cy="107" r="1"/>
+                    <circle cx="179" cy="155" r="1"/>
+                    <circle cx="180" cy="92" r="1"/>
+                    <circle cx="74" cy="96" r="1"/>
+                    <circle cx="85" cy="119" r="1"/>
+                    <circle cx="185" cy="191" r="1"/>
+                    <circle cx="155" cy="66" r="1"/>
+                    <circle cx="179" cy="4" r="1"/>
+                    <circle cx="279" cy="41" r="1"/>
+                    <circle cx="241" cy="83" r="1"/>
+                    <circle cx="214" cy="103" r="1"/>
+                    <circle cx="272" cy="198" r="1"/>
+                    <circle cx="132" cy="52" r="1"/>
+                    <circle cx="275" cy="32" r="1"/>
+                    <circle cx="163" cy="126" r="1"/>
+                    <circle cx="110" cy="186" r="1"/>
+                    <circle cx="265" cy="50" r="1"/>
+                    <circle cx="230" cy="45" r="1"/>
+                    <circle cx="171" cy="24" r="1"/>
+                    <circle cx="290" cy="133" r="1"/>
+                    <circle cx="29" cy="38" r="1"/>
+                    <circle cx="100" cy="188" r="1"/>
+                    <circle cx="46" cy="48" r="1"/>
+                    <circle cx="288" cy="162" r="1"/>
+                    <circle cx="60" cy="67" r="1"/>
+                    <circle cx="38" cy="140" r="1"/>
+                    <circle cx="220" cy="174" r="1"/>
+                    <circle cx="70" cy="99" r="1"/>
+                    <circle cx="111" cy="136" r="1"/>
+                    <circle cx="107" cy="103" r="1"/>
+                    <circle cx="132" cy="154" r="1"/>
+                    <circle cx="81" cy="172" r="1"/>
+                    <circle cx="215" cy="39" r="1"/>
+                    <circle cx="46" cy="39" r="1"/>
+                    <circle cx="297" cy="57" r="1"/>
+                    <circle cx="192" cy="143" r="1"/>
+                    <circle cx="185" cy="107" r="1"/>
+                    <circle cx="283" cy="100" r="1"/>
+                    <circle cx="31" cy="46" r="1"/>
+                    <circle cx="21" cy="127" r="1"/>
+                    <circle cx="38" cy="67" r="1"/>
+                </g>
+
+                <g id="fixed-map">
+                    <use xlink:href="#map-grid"/>
+                    <use xlink:href="#background-stars"/>
+
+                    <use xlink:href="#star" transform="translate(160, 43) scale(8, 8)"/>
+                    <text x="166" y="54">Raza Array</text>
+
+                    <use xlink:href="#star" transform="translate(103, 152) scale(10, 10)"/>
+                    <text x="108" y="164">New Avalon</text>
+                </g>
+
+                <g id="odyssey">
+                    <circle cx="0" cy="0" r="3" class="ship odyssey"/>
+                    <text x="5" y="3">Odyssey</text>
+                </g>
+                <g id="freighter">
+                    <circle cx="0" cy="0" r="3" class="ship"/>
+                    <text x="5" y="3">Freighter</text>
+                </g>
+                <g id="distress">
+                    <circle cx="0" cy="0" r="3" class="ship distress"/>
+                    <text x="5" y="3">Distress Signal Origin</text>
+                </g>
+                <g id="debris">
+                    <circle cx="0" cy="0" r="3" class="ship distress"/>
+                    <text x="5" y="3">Debris</text>
+                </g>
+                <g id="alien-vessel">
+                    <circle cx="0" cy="0" r="3" class="ship distress"/>
+                    <text x="5" y="3">Alien Vessel</text>
+                </g>
+            </defs>
+        </svg>
+    </body>
+</html>
